@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insertar Marca</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Insertar Nueva Marca</h1>
+  <nav><a href="index.html">Ranking</a></nav>
+</header>
+
+<main>
+  <div id="login-container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="loginBtn">Login</button>
+    <p id="login-error"></p>
+  </div>
+
+  <form id="insert-form" style="display:none;">
+    <label>Nombre y Apellidos<input type="text" id="nombre" required></label>
+    <label>Fecha de Nacimiento<input type="date" id="fechaNacimiento" required></label>
+    <label>Sexo
+      <select id="sexo">
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+      </select>
+    </label>
+    <label>Modalidad
+      <select id="modalidad">
+        <option value="aireLibre">Aire Libre</option>
+        <option value="pistaCubierta">Pista Cubierta</option>
+      </select>
+    </label>
+    <label>Prueba
+      <select id="prueba"></select>
+    </label>
+    <label>Fecha de la Marca<input type="date" id="fechaMarca" required></label>
+    <label>Marca<input type="text" id="marca" required placeholder="Ej: 12.34 s o 5.67 m"></label>
+    <label>Instalación/Competición<input type="text" id="instalacion"></label>
+    <label>Artefacto<input type="text" id="artefacto" readonly></label>
+    <button type="submit">Guardar Marca</button>
+  </form>
+</main>
+
+<script type="module" src="js/insert.js"></script>
+</body>
+</html>
